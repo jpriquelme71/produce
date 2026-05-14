@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JP Chilean | Fresh Market & Delivery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .font-brand { font-family: 'Playfair+Display', serif; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('FONDO3.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .parallax-section {
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+        .btn-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-white/80 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-green-700 font-brand">JP Chilean <span class="text-[10px] font-light text-slate-400 tracking-widest ml-1 uppercase">Green Market</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#packs" class="hover:text-green-600 transition">Nuestros Packs</a>
+                    <a href="#congelados" class="hover:text-green-600 transition">Congelados</a>
+                    <a href="#suscripcion" class="hover:text-green-600 transition">Suscripción</a>
+                </div>
+                <a href="#" class="bg-green-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-green-700 transition">Pide por WhatsApp</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative h-screen flex items-center justify-center text-center text-white hero-bg">
+        <div class="max-w-3xl px-4 z-10">
+            <h1 class="text-5xl md:text-7xl font-brand mb-6 leading-tight">Del Mercado a tu Puerta, sin Escalas</h1>
+            <p class="text-xl md:text-2xl mb-10 font-light italic opacity-90 text-slate-100">La selección de un Chef, fraccionada para tu hogar. Frescura real en tu complejo.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#packs" class="bg-white text-green-800 px-8 py-4 rounded-xl font-bold text-lg btn-hover">Ver Packs Semanales</a>
+                <a href="#congelados" class="bg-green-700/80 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-bold text-lg btn-hover border border-white/20">Explorar Congelados</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-24 px-4 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="group p-8 bg-white rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl transition-shadow">
+                <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto text-green-600 mb-6 group-hover:bg-green-600 group-hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Ahorra Tiempo</h3>
+                <p class="text-slate-500 leading-relaxed">Olvida el tráfico y las filas. Nosotros seleccionamos, pesamos y entregamos mientras tú disfrutas.</p>
+            </div>
+            <div class="group p-8 bg-white rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl transition-shadow">
+                <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto text-blue-600 mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Entrega Silenciosa</h3>
+                <p class="text-slate-500 leading-relaxed">Operamos exclusivamente en tu edificio. Entregas directas a tu puerta con discreción total.</p>
+            </div>
+            <div class="group p-8 bg-white rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl transition-shadow">
+                <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto text-orange-600 mb-6 group-hover:bg-orange-600 group-hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Cero Desperdicio</h3>
+                <p class="text-slate-500 leading-relaxed">Cantidades configuradas para recetas reales. Recibes lo que necesitas, ni más ni menos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="packs" class="py-24 bg-slate-100 relative overflow-hidden">
+        <div class="absolute top-0 right-0 opacity-10 w-1/3">
+            <img src="FONDOVERDIZQUI.jpg" alt="Deco" class="w-full">
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="text-center mb-16">
+                <span class="text-green-600 font-bold tracking-widest uppercase text-xs">Frescura de Hoy</span>
+                <h2 class="text-4xl md:text-5xl font-brand mt-2">Nuestros Packs Semanales</h2>
+                <p class="text-slate-500 mt-4 max-w-xl mx-auto">Seleccionados cada mañana desde Restaurant Depot. Calidad profesional en tu cocina.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Pack 1 -->
+                <div class="glass-card rounded-[2rem] overflow-hidden shadow-xl group">
+                    <div class="h-72 overflow-hidden relative">
+                        <img src="BOLSAYVEGETALES.jpg" alt="Pack Esencial" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.src='https://placehold.co/600x800/22c55e/ffffff?text=Pack+Esencial'">
+                        <span class="absolute top-4 right-4 bg-green-600 text-white px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider shadow-lg">Más Popular</span>
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold mb-2">Pack Esencial</h4>
+                        <p class="text-sm text-slate-500 mb-6">La base de toda cocina. Lo que siempre debe estar a mano.</p>
+                        <ul class="text-sm space-y-3 mb-8 text-slate-600">
+                            <li class="flex items-center"><svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> 5 lbs Papas Seleccionadas</li>
+                            <li class="flex items-center"><svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> 3 Cebollas Amarillas</li>
+                            <li class="flex items-center"><svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> 1 Cabeza de Ajo Premium</li>
+                        </ul>
+                        <div class="flex justify-between items-center pt-4 border-t border-slate-100">
+                            <span class="text-3xl font-bold text-slate-800">$15.00</span>
+                            <button class="bg-slate-800 text-white px-6 py-2 rounded-xl text-sm font-semibold hover:bg-green-700 transition-all">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pack 2 -->
+                <div class="glass-card rounded-[2rem] overflow-hidden shadow-xl group">
+                    <div class="h-72 overflow-hidden">
+                        <img src="BOLSATRANS.jpg" alt="Pack Ensalada Fresca" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.src='https://placehold.co/600x800/22c55e/ffffff?text=Salad+Pack'">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold mb-2">Fresh Salad Pack</h4>
+                        <p class="text-sm text-slate-500 mb-6">Todo lo necesario para ensaladas vibrantes y frescas.</p>
+                        <ul class="text-sm space-y-3 mb-8 text-slate-600">
+                            <li class="flex items-center"><svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> 3 Tomates Roma Maduros</li>
+                            <li class="flex items-center"><svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> 1 Pepino Crunchy</li>
+                            <li class="flex items-center"><svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Manojo de Cilantro Fresco</li>
+                        </ul>
+                        <div class="flex justify-between items-center pt-4 border-t border-slate-100">
+                            <span class="text-3xl font-bold text-slate-800">$12.00</span>
+                            <button class="bg-slate-800 text-white px-6 py-2 rounded-xl text-sm font-semibold hover:bg-green-700 transition-all">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pack 3 -->
+                <div class="glass-card rounded-[2rem] overflow-hidden shadow-xl group">
+                    <div class="h-72 overflow-hidden">
+                        <img src="BOLSACRAFTYVEGETALES.jpg" alt="Pack Sazón" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.src='https://placehold.co/600x800/22c55e/ffffff?text=Chef+Mix'">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold mb-2">Chef's Mix</h4>
+                        <p class="text-sm text-slate-500 mb-6">El secreto para caldos y guisos llenos de sabor.</p>
+                        <ul class="text-sm space-y-3 mb-8 text-slate-600">
+                            <li class="flex items-center"><svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Trozo de Calabaza Dulce</li>
+                            <li class="flex items-center"><svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> 2 Zanahorias Grandes</li>
+                            <li class="flex items-center"><svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Yuca seleccionada</li>
+                        </ul>
+                        <div class="flex justify-between items-center pt-4 border-t border-slate-100">
+                            <span class="text-3xl font-bold text-slate-800">$18.00</span>
+                            <button class="bg-slate-800 text-white px-6 py-2 rounded-xl text-sm font-semibold hover:bg-green-700 transition-all">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="congelados" class="py-24 bg-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <div class="absolute -top-10 -left-10 w-40 h-40 bg-blue-400/20 rounded-full blur-3xl"></div>
+                <img src="BACK2.jpg" alt="Sección Congelados" class="rounded-[3rem] shadow-2xl relative z-10 w-full h-[500px] object-cover" onerror="this.src='https://placehold.co/600x800/3b82f6/ffffff?text=Congelados'">
+                <div class="absolute bottom-6 left-6 z-20 bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-white">
+                    <p class="text-blue-600 font-bold text-xl leading-tight">Stock Limitado<br><span class="text-slate-400 font-normal text-sm">Conserva el sabor por más tiempo</span></p>
+                </div>
+            </div>
+            <div class="space-y-8">
+                <span class="text-blue-600 font-bold tracking-widest uppercase text-sm border-b-2 border-blue-100 pb-1 italic">Operación Bajo Cero</span>
+                <h2 class="text-4xl md:text-5xl font-brand leading-tight text-slate-900 italic">Tus favoritos, siempre listos en el freezer</h2>
+                <p class="text-lg text-slate-600 leading-relaxed italic">Aprovecha nuestros productos fraccionados en porciones ideales. Máxima duración sin perder textura ni nutrientes.</p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="p-5 border border-slate-100 rounded-2xl bg-slate-50 flex items-center shadow-sm hover:border-blue-200 transition-colors">
+                        <div class="mr-4 text-2xl">❄️</div>
+                        <div>
+                            <span class="font-bold block">Choclo Desgranado</span>
+                            <span class="text-xs text-slate-400">Bolsa 1 lb - $3.50</span>
+                        </div>
+                    </div>
+                    <div class="p-5 border border-slate-100 rounded-2xl bg-slate-50 flex items-center shadow-sm hover:border-blue-200 transition-colors">
+                        <div class="mr-4 text-2xl">❄️</div>
+                        <div>
+                            <span class="font-bold block">Mix de Verduras</span>
+                            <span class="text-xs text-slate-400">Bolsa 1 lb - $4.00</span>
+                        </div>
+                    </div>
+                    <div class="p-5 border border-slate-100 rounded-2xl bg-slate-50 flex items-center shadow-sm hover:border-blue-200 transition-colors">
+                        <div class="mr-4 text-2xl">❄️</div>
+                        <div>
+                            <span class="font-bold block">Yuca Pelada</span>
+                            <span class="text-xs text-slate-400">Bolsa 2 lbs - $5.50</span>
+                        </div>
+                    </div>
+                    <div class="p-5 border border-slate-100 rounded-2xl bg-slate-50 flex items-center shadow-sm hover:border-blue-200 transition-colors">
+                        <div class="mr-4 text-2xl">❄️</div>
+                        <div>
+                            <span class="font-bold block">Mix Smoothies</span>
+                            <span class="text-xs text-slate-400">Frutos Rojos - $6.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="suscripcion" class="parallax-section py-32 text-white text-center relative" style="background-image: linear-gradient(rgba(10, 45, 15, 0.85), rgba(10, 45, 15, 0.85)), url('FONDO4.jpg');">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-4xl md:text-6xl font-brand mb-6 leading-tight">Olvídate de la logística del mercado</h2>
+            <p class="text-xl md:text-2xl mb-12 font-light text-green-50/80">Suscríbete a nuestra entrega semanal o quincenal y recibe un <span class="font-bold text-white underline decoration-green-400">10% de descuento</span> permanente + prioridad en stock.</p>
+            <div class="inline-flex flex-col md:flex-row items-center bg-white/10 backdrop-blur-lg p-3 rounded-[2rem] border border-white/20 w-full md:w-auto shadow-2xl">
+                <input type="email" placeholder="Tu email para el catálogo" class="bg-transparent px-8 py-4 outline-none text-white placeholder-white/50 w-full md:w-96 text-lg">
+                <button class="bg-white text-green-900 px-10 py-4 rounded-[1.5rem] font-bold w-full md:w-auto hover:bg-green-50 transition-all text-lg shadow-xl uppercase tracking-tighter">Reservar Cupo</button>
+            </div>
+            <p class="mt-8 text-xs text-white/40 uppercase tracking-[0.3em] font-semibold italic">Exclusivo para residentes del complejo • Cupos limitados por semana</p>
+        </div>
+    </section>
+
+    <footer class="py-16 bg-slate-900 text-slate-400">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-12">
+                <div class="text-left">
+                    <span class="text-4xl font-bold text-white font-brand">JP Chilean</span>
+                    <p class="mt-3 text-lg font-light">Frescura & Conveniencia de Vecino a Vecino.</p>
+                </div>
+                <div class="flex md:justify-end space-x-8 text-sm">
+                    <a href="#" class="hover:text-white transition">FAQ</a>
+                    <a href="#" class="hover:text-white transition">Términos</a>
+                    <a href="#" class="hover:text-white transition">Soporte</a>
+                    <a href="#" class="hover:text-white transition">WhatsApp</a>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-10 text-center text-xs tracking-widest text-slate-500 uppercase">
+                © 2024 JP Chilean LLC • Operación Silenciosa & Segura • Orlando, FL
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar appearance change on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('py-1', 'bg-white/95', 'shadow-md');
+                nav.classList.remove('bg-white/80');
+            } else {
+                nav.classList.remove('py-1', 'bg-white/95', 'shadow-md');
+                nav.classList.add('bg-white/80');
+            }
+        });
+    </script>
+</body>
+</html>
